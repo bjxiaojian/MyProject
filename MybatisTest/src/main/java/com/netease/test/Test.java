@@ -32,17 +32,17 @@ public class Test {
   }
 
   public static void main(String[] args) {
-//        SqlSession session = sqlSessionFactory.openSession();
-//        try {
-////        User user = session.selectOne("com.netease.model.UserMapper.selectUserByID", 1);
-//
-//            IUserMapper mapper = session.getMapper(IUserMapper.class);
-//            User user = mapper.selectUserByID(1);
-//            System.out.println(user.getUserAddress());
-//            System.out.println(user.getUserName());
-//        } finally {
-//            session.close();
-//        }
+        SqlSession session = sqlSessionFactory.openSession();
+        try {
+//        User user = session.selectOne("com.netease.model.UserMapper.selectUserByID", 1);
+
+            IUserMapper mapper = session.getMapper(IUserMapper.class);
+            User user = mapper.selectUserByID(1);
+            System.out.println(user.getUserAddress());
+            System.out.println(user.getUserName());
+        } finally {
+            session.close();
+        }
 
     Test test = new Test();
     test.addUser();

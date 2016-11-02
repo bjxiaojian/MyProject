@@ -4,6 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd" >
 
 <configuration>
+  <!-- 为每个model类配置别名 -->
   <typeAliases>
     <typeAlias alias="User" type="com.netease.model.User"/>
     <typeAlias alias="Article" type="com.netease.model.Article"/>
@@ -16,6 +17,7 @@
     </plugin>
   </plugins>
 
+  <!-- 手动加载model的映射xml文件 -->
   <!--<mappers>-->
     <!--<mapper resource="mapper/User.xml"/>-->
   <!--</mappers>-->
