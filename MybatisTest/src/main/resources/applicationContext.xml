@@ -32,7 +32,6 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <!-- 方式一 为每个接口定义一个bean -->
     <!--<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
         <!--&lt;!&ndash;sqlSessionFactory属性指定要用到的SqlSessionFactory实例&ndash;&gt;-->
         <!--<property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
@@ -40,7 +39,6 @@
         <!--<property name="mapperInterface" value="com.netease.mapper.IUserMapper"/>-->
     <!--</bean>-->
 
-    <!-- 方式二 Mybatis自动扫描接口 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.netease.mapper" />
     </bean>
