@@ -1,9 +1,9 @@
-package com.netease.mapper;
+package com.xxx.mapper;
 
 
-import com.netease.model.Article;
-import com.netease.model.User;
-import com.netease.util.PageInfo;
+import com.xxx.model.Article;
+import com.xxx.model.User;
+import com.xxx.util.PageInfo;
 
 import org.apache.ibatis.annotations.Param;
 

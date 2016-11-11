@@ -1,8 +1,8 @@
-package com.netease.test;
+package com.xxx.test;
 
-import com.netease.mapper.IUserMapper;
-import com.netease.model.Article;
-import com.netease.model.User;
+import com.xxx.mapper.IUserMapper;
+import com.xxx.model.Article;
+import com.xxx.model.User;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -11,8 +11,6 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.Reader;
 import java.util.List;
-
-import static javafx.scene.input.KeyCode.T;
 
 public class Test {
   private static SqlSessionFactory sqlSessionFactory;

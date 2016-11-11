@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.netease.dao.CategoryMapper">
-  <resultMap id="BaseResultMap" type="com.netease.model.Category">
+<mapper namespace="com.xxx.dao.CategoryMapper">
+  <resultMap id="BaseResultMap" type="com.xxx.model.Category">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="catname" jdbcType="VARCHAR" property="catname" />
     <result column="catdescription" jdbcType="VARCHAR" property="catdescription" />
@@ -19,13 +19,13 @@
     delete from category
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.netease.model.Category">
+  <insert id="insert" parameterType="com.xxx.model.Category">
     insert into category (id, catname, catdescription
       )
     values (#{id,jdbcType=INTEGER}, #{catname,jdbcType=VARCHAR}, #{catdescription,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.netease.model.Category">
+  <insert id="insertSelective" parameterType="com.xxx.model.Category">
     insert into category
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.netease.model.Category">
+  <update id="updateByPrimaryKeySelective" parameterType="com.xxx.model.Category">
     update category
     <set>
       <if test="catname != null">
@@ -62,7 +62,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.netease.model.Category">
+  <update id="updateByPrimaryKey" parameterType="com.xxx.model.Category">
     update category
     set catname = #{catname,jdbcType=VARCHAR},
       catdescription = #{catdescription,jdbcType=VARCHAR}

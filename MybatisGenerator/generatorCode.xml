@@ -29,22 +29,22 @@
     </javaTypeResolver>
 
     <!-- 数据表对应的model 层  -->
-    <javaModelGenerator targetPackage="com.netease.model" targetProject="src">
+    <javaModelGenerator targetPackage="com.xxx.model" targetProject="src">
       <property name="enableSubPackages" value="true" />
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
 
     <!-- sql mapper 隐射配置文件 -->
-    <sqlMapGenerator targetPackage="com.netease.mapper"  targetProject="src">
+    <sqlMapGenerator targetPackage="com.xxx.mapper" targetProject="src">
       <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
 
     <!-- 在ibatis2 中是dao层，但在mybatis3中，其实就是mapper接口 -->
-    <javaClientGenerator type="XMLMAPPER" targetPackage="com.netease.dao"  targetProject="src">
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.xxx.dao" targetProject="src">
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 
-    <!-- 要对那些数据表进行生成操作，必须要有一个. -->
+    <!-- 要对那些数据表进行生成操作，必须要有一个 -->
     <table schema="mytest" tableName="category" domainObjectName="Category"
            enableCountByExample="false" enableUpdateByExample="false"
            enableDeleteByExample="false" enableSelectByExample="false"

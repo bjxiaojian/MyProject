@@ -1,4 +1,4 @@
-package com.netease.test;
+package com.xxx.test;
 
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;

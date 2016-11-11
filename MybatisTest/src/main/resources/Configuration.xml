@@ -5,12 +5,12 @@
 
 <configuration>
   <typeAliases>
-    <typeAlias alias="User" type="com.netease.model.User"/>
-    <typeAlias alias="Article" type="com.netease.model.Article"/>
+    <typeAlias alias="User" type="com.xxx.model.User"/>
+    <typeAlias alias="Article" type="com.xxx.model.Article"/>
   </typeAliases>
 
   <plugins>
-    <plugin interceptor="com.netease.util.PagePlugin">
+    <plugin interceptor="com.xxx.util.PagePlugin">
       <property name="dialect" value="mysql" />
       <property name="pageSqlId" value=".*ListPage.*" />
     </plugin>

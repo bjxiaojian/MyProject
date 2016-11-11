@@ -1,4 +1,4 @@
-package com.netease.util;
+package com.xxx.util;
 
 import org.apache.ibatis.executor.ErrorContext;
 import org.apache.ibatis.executor.ExecutorException;

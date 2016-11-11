@@ -1,10 +1,9 @@
-package com.netease.test;
+package com.xxx.test;
 
-import com.netease.mapper.IUserMapper;
-import com.netease.model.Article;
-import com.netease.model.User;
+import com.xxx.mapper.IUserMapper;
+import com.xxx.model.Article;
+import com.xxx.model.User;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

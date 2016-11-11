@@ -1,6 +1,6 @@
-package com.netease.dao;
+package com.xxx.dao;
 
-import com.netease.model.Category;
+import com.xxx.model.Category;
 
 public interface CategoryMapper {
     int deleteByPrimaryKey(Integer id);

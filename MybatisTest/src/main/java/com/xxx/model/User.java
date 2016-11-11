@@ -1,4 +1,4 @@
-package com.netease.model;
+package com.xxx.model;
 
 public class User {
     

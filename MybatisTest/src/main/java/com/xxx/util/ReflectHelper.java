@@ -1,4 +1,4 @@
-package com.netease.util;
+package com.xxx.util;
 
 import java.lang.reflect.Field;
 

@@ -1,8 +1,8 @@
-package com.netease.controller;
+package com.xxx.controller;
 
-import com.netease.mapper.IUserMapper;
-import com.netease.model.Article;
-import com.netease.util.PageInfo;
+import com.xxx.mapper.IUserMapper;
+import com.xxx.model.Article;
+import com.xxx.util.PageInfo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
