@@ -45,11 +45,28 @@
     </javaClientGenerator>
 
     <!-- 要对那些数据表进行生成操作，必须要有一个 -->
-    <table schema="mytest" tableName="category" domainObjectName="Category"
+<!--    <table schema="mytest" tableName="category" domainObjectName="Category"
+           enableCountByExample="false" enableUpdateByExample="false"
+           enableDeleteByExample="false" enableSelectByExample="false"
+           selectByExampleQueryId="false">
+    </table>-->
+
+    <table schema="mytest" tableName="lottery_rule_rec" domainObjectName="LotteryRule"
            enableCountByExample="false" enableUpdateByExample="false"
            enableDeleteByExample="false" enableSelectByExample="false"
            selectByExampleQueryId="false">
     </table>
 
+    <table schema="mytest" tableName="user_label" domainObjectName="UserLabel"
+           enableCountByExample="false" enableUpdateByExample="false"
+           enableDeleteByExample="false" enableSelectByExample="false"
+           selectByExampleQueryId="false">
+    </table>
+
+    <table schema="mytest" tableName="user_label_desc" domainObjectName="UserLabelDesc"
+           enableCountByExample="false" enableUpdateByExample="false"
+           enableDeleteByExample="false" enableSelectByExample="false"
+           selectByExampleQueryId="false">
+    </table>
   </context>
 </generatorConfiguration>
