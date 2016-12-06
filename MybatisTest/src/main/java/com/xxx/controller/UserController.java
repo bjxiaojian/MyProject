@@ -1,7 +1,10 @@
 package com.xxx.controller;
 
+import com.xxx.enums.IdTypeEnum;
 import com.xxx.mapper.IUserMapper;
 import com.xxx.model.Article;
+import com.xxx.model.User;
+import com.xxx.util.JacksonUtil;
 import com.xxx.util.PageInfo;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +30,33 @@ public class UserController {
     mav.addObject("articles", articles);
     return mav;
   }
+
+  @RequestMapping("/adduser")
+  public ModelAndView adduser() {
+    User user = new User();
+    user.setUserAddress("人民广场");
+    user.setUserName("飞鸟");
+    user.setUserAge("80");
+    user.setIdType(IdTypeEnum.PASSPORT);
+    userMapper.addUser(user);
+
+    ModelAndView mav = new ModelAndView("user");
+    mav.addObject("user", user);
+    return mav;
+  }
+
+  @RequestMapping("/getuser")
+  public ModelAndView getuser() {
+    User user = userMapper.selectUserByID(3);
+    System.out.println(user.getIdType());
+    System.out.println(JacksonUtil.encode(user));
+    ModelAndView mav = new ModelAndView("user");
+    mav.addObject("user", user);
+    return mav;
+  }
+
+
+
 
   @RequestMapping("/pagelist")
   public ModelAndView pageList(HttpServletRequest request, HttpServletResponse response) {

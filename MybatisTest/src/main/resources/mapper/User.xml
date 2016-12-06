@@ -10,6 +10,7 @@
     <result column="userName" property="userName" />
     <result column="userAge" property="userAge" />
     <result column="userAddress" property="userAddress" />
+    <result column="idtype" property="idType" />
   </resultMap>
 
 
@@ -26,8 +27,8 @@
   的name属性，MyBatis将使用反射读取Student参数的此属性。#{name}中name大小写敏感。引用其他的gender等属性与此一致。
   useGeneratedKeys设置为"true"表明要MyBatis获取由数据库自动生成的主键；keyProperty="id"指定把获取到的主键值注入到Student的id属性-->
   <insert id="addUser" parameterType="User" useGeneratedKeys="true" keyProperty="id">
-    insert into user(userName,userAge,userAddress)
-    values(#{userName},#{userAge},#{userAddress})
+    insert into user(userName,userAge,userAddress,idtype)
+    values(#{userName},#{userAge},#{userAddress},#{idType})
   </insert>
 
   <update id="updateUser" parameterType="User" >

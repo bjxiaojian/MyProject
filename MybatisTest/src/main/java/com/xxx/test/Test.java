@@ -1,5 +1,6 @@
 package com.xxx.test;
 
+import com.xxx.enums.IdTypeEnum;
 import com.xxx.mapper.IUserMapper;
 import com.xxx.model.Article;
 import com.xxx.model.User;
@@ -69,6 +70,7 @@ public class Test {
     user.setUserAddress("人民广场");
     user.setUserName("飞鸟");
     user.setUserAge("80");
+    user.setIdType(IdTypeEnum.IDCARD);
     SqlSession session = sqlSessionFactory.openSession();
     try {
       IUserMapper mapper = session.getMapper(IUserMapper.class);

@@ -1,11 +1,14 @@
 package com.xxx.model;
 
+import com.xxx.enums.IdTypeEnum;
+
 public class User {
     
     private int id;
     private String userName;
     private String userAge;
     private String userAddress;
+    private IdTypeEnum idType;
     
     public int getId() {
         return id;
@@ -32,4 +35,11 @@ public class User {
         this.userAddress = userAddress;
     }
 
+    public IdTypeEnum getIdType() {
+        return idType;
+    }
+
+    public void setIdType(IdTypeEnum idType) {
+        this.idType = idType;
+    }
 }
